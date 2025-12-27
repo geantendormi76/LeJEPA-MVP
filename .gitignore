@@ -1,0 +1,80 @@
+# ==========================
+# 1. AI 协作与上下文架构 (核心隔离)
+# ==========================
+
+# [Context] 忽略自动生成的全量上下文快照
+*_context.md
+*_structure.md
+context_bridge.py
+
+# [Tools] 忽略 AI 协作用的临时热补丁脚本 (1.py, 4.py 等)
+[0-9].py
+
+# ==========================
+# 2. 临时与隔离区
+# ==========================
+# [AAA] 忽略所有临时实验、探针和证据截图
+/AAA/
+
+# [Legacy] 忽略旧的项目文档目录
+/项目相关信息/
+
+# [Archive] 忽略清理脚本生成的归档目录
+_ARCHIVE_*/
+
+# ==========================
+# 3. 数据与模型 (大文件)
+# ==========================
+# 忽略数据集
+/data/
+/tests/data
+
+# 忽略模型权重 (ONNX/PT)
+/models/
+/runs/
+
+# 忽略评估与监控输出
+/evaluation_output/
+/watcher/
+profiling_results.prof
+
+# ==========================
+# 4. Python 环境与缓存
+# ==========================
+# 虚拟环境
+.venv/
+venv/
+/env/
+
+# 字节码缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ==========================
+# 5. IDE 与 系统文件
+# ==========================
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ==========================
+# 6. 日志与临时文件
+# ==========================
+/logs/
+*.log
+*.tmp
+*.bak
+
+# [图片] 忽略根目录下的截图，但保留 assets 内的资源
+*.png
+!services/action_service/assets/*.png
+!data/templates/*.png
+
+# [文本] 忽略临时 txt，但强制保留 requirements.txt
+*.txt
+!requirements.txt

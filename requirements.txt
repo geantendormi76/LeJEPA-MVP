@@ -1,0 +1,12 @@
+
+torch>=2.0.0
+torchvision>=0.15.0
+timm>=0.9.0
+numpy
+h5py
+matplotlib
+scikit-learn
+tqdm
+wandb
+hydra-core
+tensorboard
