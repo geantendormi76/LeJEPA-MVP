@@ -32,7 +32,7 @@
 我们提取了预训练模型 (Epoch 450) 的特征空间并进行了 t-SNE 降维。
 **注意：模型在训练过程中从未见过任何标签！**
 
-![t-SNE Visualization](AAA/imgs/vis_ep450_tsne.png)
+![t-SNE Visualization](vis_ep450_tsne.png)
 
 *   **绿色簇 (Medium Spiral):** 紧密聚类，说明模型理解了“旋涡”的拓扑结构。
 *   **橙/紫交融 (Smooth):** 圆形与椭圆星系的过渡区域平滑连续，符合天体物理学规律。
