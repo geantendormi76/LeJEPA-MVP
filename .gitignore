@@ -71,7 +71,7 @@ Thumbs.db
 *.bak
 
 # [图片] 忽略根目录下的截图，但保留 assets 内的资源
-*.png
+
 !services/action_service/assets/*.png
 !data/templates/*.png
 
